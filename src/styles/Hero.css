@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .hero{
@@ -37,4 +38,31 @@
 .video-div{
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+.hero-information{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 95%;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    color: #fdfdfd;
+    gap: 1rem;
+    height: 30vh;
+}
+
+.calander{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.connect{
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.photo{
+    grid-row-start: 1;
+    grid-row-end: 6;
 }

@@ -4,12 +4,13 @@ function Navbar() {
     return (
         <div className="navbar-container">
             <div className="navbar">
-                    <div className="item logo">logo</div>
+                <a href="/"><div className="item logo">logo</div></a>
                     <div className="item actions">
-                        <a href="">project</a>
-                        <a href="">event</a>
+                        <a href="/projects">projects</a>
+                        <a href="">events</a>
                         <a href="">resources</a>
                         <a href="">contact us</a>
+                        <a>[]</a>
                     </div>
             </div>
         </div>
