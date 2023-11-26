@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.css";
-import Logo from "../../assets/logo.svg";
-import Discord from "../../assets/discord.svg";
+import Logo from "../../assets/Navbar/logo.svg";
+import Discord from "../../assets/Navbar/discord.svg";
 
 function Navbar() {
     return (

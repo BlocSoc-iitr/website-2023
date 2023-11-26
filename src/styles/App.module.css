@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
@@ -10,9 +11,9 @@ body {
   /* height: fit-content; */
 }
 
-.backgroundImage{
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
+.BackgroundImage{
+  background-image: url(../assets/Home/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

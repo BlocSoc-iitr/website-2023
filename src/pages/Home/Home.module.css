@@ -8,24 +8,26 @@
     src: url(../../fonts/KuunariLight.otf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.heroContainer{
+.heroContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.hero{
+/* Grid Layout */
+
+.hero {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     grid-template-rows: repeat(5, 1fr);
@@ -37,7 +39,7 @@ a{
     height: 90vh;
 }
 
-.heroItem{
+.heroItem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +47,7 @@ a{
     flex-direction: column;
 }
 
-.heroInformation{
+.heroInformation {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -54,33 +56,35 @@ a{
     margin-top: 2rem;
     color: #fdfdfd;
     gap: 1rem;
-    height: 30vh;
+    height: 40vh;
 }
 
-.title{
+/* Title-Div */
+
+.title {
     grid-row-start: 1;
     grid-row-end: 6;
     justify-content: space-around;
     align-items: start;
+
+    >h1 {
+        font-family: 'KunnariLight';
+        font-size: 7vw;
+        width: 25vw;
+        margin: 3vw;
+        margin-top: 2vw;
+        z-index: 1;
+    }
+
+    >p {
+        font-size: 2vw;
+        margin: 3vw;
+        margin-top: 5vw;
+        font-family: 'LatoRegular';
+    }
 }
 
-.title h1{
-    font-family: 'KunnariLight';
-    font-size: 7vw;
-    width: 25vw;
-    margin: 3vw;
-    margin-top: 2vw;
-    z-index: 1;
-}
-
-.title p{
-    font-size: 2vw;
-    margin: 3vw;
-    margin-top: 5vw;
-    font-family: 'LatoRegular';
-}
-
-.titleGradient{
+.titleGradient {
     width: 50%;
     height: 87.6%;
     overflow: hidden;
@@ -89,7 +93,8 @@ a{
     -webkit-transform: scaleX(-1);
     z-index: -1;
 }
-.titleBackground{
+
+.titleBackground {
     height: 87%;
     width: 50%;
     position: absolute;
@@ -98,7 +103,7 @@ a{
     z-index: 0;
 }
 
-.titleLogo{
+.titleLogo {
     height: 40%;
     overflow: hidden;
     position: absolute;
@@ -108,83 +113,232 @@ a{
     z-index: 0;
 }
 
-.description{
+/* Description-Div */
+
+.description {
     grid-row-start: 2;
     grid-row-end: 6;
     justify-content: center;
-    background-image: url(../../assets/DiscriptionBackground.png);
+    background-image: url(../../assets/Home/DiscriptionBackground.png);
+    background-position: center;
     background-size: 100%;
     background-position: center;
-    background-color: #0d1016;
+    background-color: #1e1e1e;
+
+    >p {
+        font-size: 1rem;
+        margin: 2rem;
+        margin-top: 1rem;
+        font-family: 'LatoRegular';
+        word-spacing: 0.2em;
+    }
+
+    >h2 {
+        font-family: 'KunnariLight';
+        font-size: 3vw;
+        font-weight: 700;
+        width: 90%;
+        margin: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
-.description h2{
-    font-family: 'KunnariLight';
-    font-size: 3vw;
-    font-weight: 700;
-    width: 90%;
-    margin: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.DcButton {
+    background-image: url(../../assets/Home/ButtonBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0;
+    width: 10vw;
+    height: 3.4vw;
+    border-radius: 2rem;
+    position: absolute;
+    bottom: -1rem;
+    right: 5rem;
+
+    >a {
+        color: transparent;
+        background-image: url(../../assets/Home/DcText.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 1.3vw;
+    }
 }
 
-.description p{
-    font-size: 1rem;
-    margin: 2rem;
-    margin-top: 1rem;
-    font-family: 'LatoRegular';
-    word-spacing: 0.2em;
-}
+/* Video-Div */
 
-.videoDiv{
+.videoDiv {
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
-
-.calander{
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-
-.connect{
-    grid-row-start: 4;
-    grid-row-end: 6;
-}
-
-.photo{
-    grid-row-start: 1;
-    grid-row-end: 6;
-}
-
-.videoBackground{
+.videoBackground {
     overflow: hidden;
     height: 100%;
     width: 100%;
     border-radius: 40px;
 }
 
-.videoBackground:hover{
+.videoBackground:hover {
     cursor: pointer;
 }
 
-.DcButton{
-    background-image: url(../../assets/ButtonBackground.png);
-    background-size: cover;
-    border: 0;
-    width: 8rem;
-    height: 3rem;
-    border-radius: 2rem;
-    position: absolute;
-    bottom: -1rem;
-    right:5rem;
-}
+/* Social */
 
-.DcButton a{
-    color: transparent;
-    background-image: url(../../assets/DcText.png);
-    background-size: 100%;
+.social {
+    background-image: url(../../assets/Home/SocialBackground.png);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-size: 1rem;
+    border-radius: 40px;
+    background-color: #c0c0be;
+    color: black;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+    >p{
+        font-family: 'LatoRegular';
+        font-style: italic;
+        border-radius: 32px;
+        border: 2px solid black;
+        padding: 0.7rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        margin-top: 0.4rem;
+        margin-left: 0.4rem;
+        font-weight: bold;
+    }
+    >div{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    >div>h3 {
+        font-size: 3rem;
+        font-family: 'LatoRegular';
+        margin-left: 1rem;
+    }
+    >div>p{
+        font-family: 'LatoRegular';
+        font-style: italic;
+        margin-left: 0.4rem;
+    }
+}
+
+/* Hackathon */
+
+.hackathon {
+    background-image: url(../../assets/Home/HackathonBackground.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-color: #00b3ff;
+    color: black;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+    >p{
+        font-family: 'LatoRegular';
+        font-style: italic;
+        border-radius: 32px;
+        border: 2px solid black;
+        padding: 0.7rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        margin-top: 0.4rem;
+        margin-left: 0.4rem;
+        font-weight: bold;
+    }
+    >div{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    >div>h3 {
+        font-size: 3rem;
+        font-family: 'LatoRegular';
+        margin-left: 1rem;
+    }
+    >div>p{
+        font-family: 'LatoRegular';
+        font-style: italic;
+        margin-left: 0.4rem;
+    }
+}
+
+/* Team */
+
+.team {
+    background-image: url(../../assets/Home/TeamBackground.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-color: #0c21d6;
+    color: white;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+    >p{
+        font-family: 'LatoRegular';
+        font-style: italic;
+        border-radius: 32px;
+        border: 2px solid white;
+        padding: 0.7rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        margin-top: 0.4rem;
+        margin-left: 0.4rem;
+        font-weight: bold;
+    }
+    >div{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    >div>h3 {
+        font-size: 3rem;
+        font-family: 'LatoRegular';
+        margin-left: 1rem;
+    }
+    >div>p{
+        font-family: 'LatoRegular';
+        font-style: italic;
+        margin-left: 0.4rem;
+    }
+}
+
+.calanderDiv{
+    height: 100vh;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.calander {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-image: url(../../assets/Home/CalanderBackground.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-color: #1e1e1e;
+}
+
+.connect {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-color: #0c21d6;
+}
+
+.photo {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    background-image: url(../../assets/Home/IconicPhoto.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

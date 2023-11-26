@@ -8,12 +8,10 @@ import {
 
 import Home from "./pages/Home/Home";
 import Project from "./pages/Project/Project";
-import BackgroundImage from "./assets/background.png";
 
 function App() {
   return (
-    <div>
-      <img className={styles.backgroundImage}src={BackgroundImage}></img>
+    <div className={styles.BackgroundImage}>
       <Routes>
         <Route index element={<Home />} />
         <Route element={<Project />} path="projects"/>

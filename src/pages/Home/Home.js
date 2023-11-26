@@ -1,12 +1,10 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import styles from "./Home.module.css";
-import TitleBackground from "../../assets/TitleBackground.png";
-import TitleGradient from "../../assets/TitleGradient.png";
-import TitleLogo from "../../assets/TitleLogo.png";
-import DiscriptionBackground from "../../assets/DiscriptionBackground.png";
-import VideoBackground from "../../assets/VideoBackground.png";
-import ButtonBackground from "../../assets/ButtonBackground.png";
+import TitleBackground from "../../assets/Home/TitleBackground.png";
+import TitleGradient from "../../assets/Home/TitleGradient.png";
+import TitleLogo from "../../assets/Home/TitleLogo.png";
+import VideoBackground from "../../assets/Home/VideoBackground.png";
 
 function Home() {
   return (
@@ -31,14 +29,38 @@ function Home() {
           </div>
         </div>
         <div className={styles.heroInformation}>
-          <div className={`${styles.heroItem} ${styles.social}`}>socials</div>
-          <div className={`${styles.heroItem} ${styles.hackathon}`}>hackathon</div>
-          <div className={`${styles.heroItem} ${styles.team}`}>team</div>
+          <div className={`${styles.heroItem} ${styles.social}`}>
+            <p>socials</p>
+            <div>
+            <p>active community members on discord</p>
+            <h3>1000+</h3>
+            </div>
+          </div>
+          <div className={`${styles.heroItem} ${styles.hackathon}`}>
+            <p>hackathons</p>
+            <div>
+            <p>hackathons won over past few years</p>
+            <h3>10+</h3>
+            </div>
+          </div>
+          <div className={`${styles.heroItem} ${styles.team}`}>
+            <p>team</p>
+            <div>
+            <p>skilled & active core team members</p>
+            <h3>45+</h3>
+            </div>
+          </div>
         </div>
-        <div className={styles.hero} id="photo-div">
-          <div className={`${styles.heroItem} ${styles.calander}`}>calander</div>
-          <div className={`${styles.heroItem} ${styles.connect}`}>connect</div>
-          <div className={`${styles.heroItem} ${styles.photo}`}>photo</div>
+        <div className={`${styles.hero} ${styles.calanderDiv}`} id="photo-div">
+          <div className={`${styles.heroItem} ${styles.calander}`}>
+
+          </div>
+          <div className={`${styles.heroItem} ${styles.connect}`}>
+            
+          </div>
+          <div className={`${styles.heroItem} ${styles.photo}`}>
+            
+          </div>
         </div>
         <Footer/>
       </div>
