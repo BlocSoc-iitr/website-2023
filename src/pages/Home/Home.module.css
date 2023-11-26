@@ -175,8 +175,8 @@ a{
     width: 8rem;
     height: 3rem;
     border-radius: 2rem;
-    position: fixed;
-    bottom: 3rem;
+    position: absolute;
+    bottom: -1rem;
     right:5rem;
 }
 
