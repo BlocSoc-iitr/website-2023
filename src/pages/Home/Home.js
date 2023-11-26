@@ -5,6 +5,7 @@ import TitleBackground from "../../assets/Home/TitleBackground.png";
 import TitleGradient from "../../assets/Home/TitleGradient.png";
 import TitleLogo from "../../assets/Home/TitleLogo.png";
 import VideoBackground from "../../assets/Home/VideoBackground.png";
+import MaskStar from "../../assets/Home/MaskStar.svg";
 
 function Home() {
   return (
@@ -51,6 +52,15 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className={styles.tagLine}>
+          <marquee scrollamount="50">
+          Where Creativity Meets the Chain<img src={MaskStar}></img>
+          Where Creativity Meets the Chain<img src={MaskStar}></img>
+          Where Creativity Meets the Chain<img src={MaskStar}></img>
+          Where Creativity Meets the Chain<img src={MaskStar}></img>
+          Where Creativity Meets the Chain<img src={MaskStar}></img>
+          </marquee>
+        </div>
         <div className={`${styles.hero} ${styles.calanderDiv}`} id="photo-div">
           <div className={`${styles.heroItem} ${styles.calander}`}>
 
@@ -58,10 +68,10 @@ function Home() {
           <div className={`${styles.heroItem} ${styles.connect}`}>
             <p>Connect with us on our social media and support us building web3 community</p>
             <div className={styles.socialMedia}>
-              <a href="https://www.instagram.com/blocsociitr/">instgram</a>
+              <a href="https://www.instagram.com/blocsociitr/">instagram</a>
               <a href="https://twitter.com/BlocSocIITR">twitter</a>
               <a href="https://www.facebook.com/BlocSocIITR/">facebook</a>
-              </div>
+            </div>
           </div>
           <div className={`${styles.heroItem} ${styles.photo}`}></div>
         </div>
