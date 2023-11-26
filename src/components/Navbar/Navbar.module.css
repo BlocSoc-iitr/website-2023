@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+@font-face {
+    font-family: 'KunnariRegularItalic';
+    src: url(../../fonts/KuunariRegularItalic.otf);
+}
+
+.navbarContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    width: 95%;
+    padding: 0.02rem;
+    margin-top: 1.5rem;
+    border-radius: 16px;
+    background-color: #303444;
+}
+
+.item{
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.logo{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.actions>a{
+    text-decoration: none;
+    color: #fdfdfd;
+    padding: 1rem;
+    font-family: 'KunnariRegularItalic';
+    font-weight: bold ;
+}
