@@ -24,7 +24,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    width: 95%;
+    width: 96%;
     padding: 0.02rem;
     margin-top: 1.5rem;
     border-radius: 16px;

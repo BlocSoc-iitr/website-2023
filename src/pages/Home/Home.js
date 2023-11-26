@@ -13,14 +13,14 @@ function Home() {
       <div className={styles.heroContainer}>
         <div className={styles.hero}>
           <div className={`${styles.heroItem} ${styles.title}`}>
-          <img src={TitleBackground} className={styles.titleBackground} draggable="false"/>
-          <img src={TitleGradient} className={styles.titleGradient} draggable="false"/>
-          <img src={TitleLogo} className={styles.titleLogo} draggable="false"/>
-          <h1>BLOCSOC IITR</h1>
-          <p>Blockchain Society IIT Roorkee is an Open Community to increase interaction among Blockchain enthusiasts and bitcoin-dev enthusiasts and to spread the word about 'Web 3.0'</p>
+            <img src={TitleBackground} className={styles.titleBackground} draggable="false" />
+            <img src={TitleGradient} className={styles.titleGradient} draggable="false" />
+            <img src={TitleLogo} className={styles.titleLogo} draggable="false" />
+            <h1>BLOCSOC IITR</h1>
+            <p>Blockchain Society IIT Roorkee is an Open Community to increase interaction among Blockchain enthusiasts and bitcoin-dev enthusiasts and to spread the word about 'Web 3.0'</p>
           </div>
           <div className={`${styles.heroItem} ${styles.videoDiv}`}>
-            <img src={VideoBackground} className={styles.videoBackground} draggable="false"/>
+            <img src={VideoBackground} className={styles.videoBackground} draggable="false" />
           </div>
           <div className={`${styles.heroItem} ${styles.description}`}>
             <h2>Creating magic since 2021</h2>
@@ -32,22 +32,22 @@ function Home() {
           <div className={`${styles.heroItem} ${styles.social}`}>
             <p>socials</p>
             <div>
-            <p>active community members on discord</p>
-            <h3>1000+</h3>
+              <p>active community members on discord</p>
+              <h3>1000+</h3>
             </div>
           </div>
           <div className={`${styles.heroItem} ${styles.hackathon}`}>
             <p>hackathons</p>
             <div>
-            <p>hackathons won over past few years</p>
-            <h3>10+</h3>
+              <p>hackathons won over past few years</p>
+              <h3>10+</h3>
             </div>
           </div>
           <div className={`${styles.heroItem} ${styles.team}`}>
             <p>team</p>
             <div>
-            <p>skilled & active core team members</p>
-            <h3>45+</h3>
+              <p>skilled & active core team members</p>
+              <h3>45+</h3>
             </div>
           </div>
         </div>
@@ -56,13 +56,16 @@ function Home() {
 
           </div>
           <div className={`${styles.heroItem} ${styles.connect}`}>
-            
+            <p>Connect with us on our social media and support us building web3 community</p>
+            <div className={styles.socialMedia}>
+              <a href="https://www.instagram.com/blocsociitr/">instgram</a>
+              <a href="https://twitter.com/BlocSocIITR">twitter</a>
+              <a href="https://www.facebook.com/BlocSocIITR/">facebook</a>
+              </div>
           </div>
-          <div className={`${styles.heroItem} ${styles.photo}`}>
-            
-          </div>
+          <div className={`${styles.heroItem} ${styles.photo}`}></div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </>
   )
