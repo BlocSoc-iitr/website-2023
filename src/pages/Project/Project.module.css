@@ -4,37 +4,3 @@
     align-items: center;
     flex-direction: column;
 }
-
-.hero{
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    width: 95%;
-    padding: 0.5rem;
-    margin-top: 2rem;
-    color: #fdfdfd;
-    gap: 1rem;
-    height: 75vh;
-}
-
-.heroItem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #fdfdfd;
-    border-radius: 40px;
-}
-
-.projectInfo{
-    grid-row-start: 1;
-    grid-row-end: 6;
-}
-
-.projectList{
-    grid-row-start: 1;
-    grid-row-end: 6;
-}
-
-.project{
-    height: 90vh;
-}

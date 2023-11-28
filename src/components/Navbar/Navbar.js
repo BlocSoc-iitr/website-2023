@@ -11,7 +11,7 @@ function Navbar() {
                         <a href="/projects">projects</a>
                         <a href="">events</a>
                         <a href="">resources</a>
-                        <a href="">team</a>
+                        <a href="/team">team</a>
                         <a href="https://discord.gg/pY4UCENc"><img src={Discord}></img></a>
                     </div>
             </div>
