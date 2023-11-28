@@ -1,20 +1,14 @@
 import Navbar from "../../components/Navbar/Navbar"
 import Footer from "../../components/Footer/Footer";
 import styles from "./Project.module.css";
+import ProjectBody from "../../components/Project/ProjectBody";
 
 function Project() {
     return (
         <>
             <Navbar />
             <div className={styles.heroContainer}>
-                <div className={`${styles.hero} ${styles.project}`}>
-                <div className={`${styles.heroItem} ${styles.projectInfo}`}>
-                    left
-                </div>
-                <div className={`${styles.heroItem} ${styles.projectList}`}>
-                    right
-                </div>
-                </div>
+                <ProjectBody />
                 <Footer />
             </div>
         </>

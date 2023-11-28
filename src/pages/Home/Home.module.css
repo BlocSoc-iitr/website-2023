@@ -168,7 +168,6 @@ a {
     position: absolute;
     bottom: -1rem;
     right: 5rem;
-
     >a {
         color: transparent;
         background-image: url(../../assets/Home/DcText.png);
@@ -375,6 +374,7 @@ a {
         text-decoration: underline;
         transform: scale(1.2);
         transform: translateY(2);
+        transition:ease-in-out all 0.3s ;
     }
 }   
 
