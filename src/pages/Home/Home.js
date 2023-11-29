@@ -53,7 +53,7 @@ function Home() {
           </div>
         </div>
         <div className={styles.tagLine}>
-          <marquee scrollamount="50">
+          <marquee scrollamount="30">
           Where Creativity Meets the Chain<img src={MaskStar}></img>
           Where Creativity Meets the Chain<img src={MaskStar}></img>
           Where Creativity Meets the Chain<img src={MaskStar}></img>

@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: auto;
 }
@@ -14,13 +14,13 @@ body{
     src: url(../../fonts/KuunariRegularItalic.otf);
 }
 
-.navbarContainer{
+.navbarContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar{
+.navbar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -31,28 +31,98 @@ body{
     background-color: #303444;
 }
 
-.item{
+.item {
     color: #fdfdfd;
     text-decoration: none;
     font-size: 1.3rem;
 }
 
-.logo{
+.logo {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     padding: 1rem;
 }
-.actions{
+
+.actions {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.actions>a{
+.actions>a {
     text-decoration: none;
     color: #fdfdfd;
     padding: 1rem;
     font-family: 'KunnariRegularItalic';
-    font-weight: bold ;
+    font-weight: bold;
+}
+
+.toggle {
+    display: none;
+}
+
+@media (min-width: 0px) and (max-width: 450px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 86%;
+        height: auto;
+    }
+
+    .item {
+        font-size: 0.5rem;
+
+        >a>img {
+            height: 0.5rem;
+        }
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .actions>a {
+        padding: 0.5rem;
+    }
+
+    .logo {
+        padding: 0.5rem;
+    }
+
+    .logo>img {
+        width: 12vw;
+        margin-left: 0.5rem;
+    }
+
+    .toggle {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 10%;
+        background-color: transparent;
+        border: 0;
+
+        >img {
+            width: 1rem;
+            margin-right: 1rem;
+        }
+
+        >p {
+            font-family: 'KunnariLight';
+            font-size: 1.1rem;
+            background: linear-gradient(to right, #2d4edf, #2d4edf);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    }
+
+    .actionDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }
