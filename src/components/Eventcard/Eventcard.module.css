@@ -1,32 +1,50 @@
-.label {
-    font-size: 1.25rem;
-    font-style:italic;
-    color: #ECECEC;
+.containerClass{
+    margin: 0rem 4rem 0 4rem;
+    padding: 4rem 2rem 4rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    border-left: 4px solid #36383c;
+    border-image: linear-gradient(to bottom,#0098b2 3%, #0254e1 12%,transparent 12%,  #36383c 13%) 30;
+    /* border-bottom: 2px solid #FFF; */
+}
+
+.imageDiv{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img {
     height: 50vh;
-    width: 27vw;
+    width: 30vw;
     border-radius: 8px ;
-    background: #3c3c3c;
     object-fit: fill;
     display:flex;
     float:right;
-    margin-right:12vw;
-    margin-top:1.5vh;
 }
 
+.content{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
 
-
-.heading{    
+.heading{
 color: #FFF;
 font-family: Lato;
-font-size: 40px;
+font-size: 3rem;
 font-style: normal;
 font-weight: 900;
 line-height: 150%;
 width:40%;
-margin-left:12vw;
 }
 
 .desc {
@@ -37,8 +55,7 @@ margin-left:12vw;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
-    width: 40%;
-    margin-left:12vw;
+    width: 100%;
 }
 
 .link{
@@ -54,48 +71,9 @@ margin-left:12vw;
     font-weight: 400;
     line-height: 160%;
     font-weight: bold;
-    margin-left:12vw;
 }
 
-.containerClass{
-    margin-top:10vh;
+.hrLine{
+    width: 80%;
+    border: 2px solid #868686;
 }
-
-.viewTalk{
-    color: #0500FF;
-    font-family: "KunnariLight";
-    font-size: 36px;
-    font-style: italic;
-    font-weight: bolder;
-    line-height: 150%;
-    margin-left:12vw;
-    margin-top:2vw;
-}
-.labelBlue{
-    font-family: "KunnariLight";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: bolder;
-    line-height: 20.8px; /* 86.667% */
-    letter-spacing: 0.48px;background: linear-gradient(101deg, #0500FF -10.97%, #0099B3 116.03%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left:12vw;
-    margin-bottom:2vh;
-}
-
-.img2{
-    margin-top:5vw;
-    margin-left:10vw;
-}
-.vl{
-    border-left: 0.5px solid rgb(255, 255, 255);
-    height: 82vh;
-    margin-left:5vw;
-    
-    float:left;
-    opacity: 20%;
-    
-}
-

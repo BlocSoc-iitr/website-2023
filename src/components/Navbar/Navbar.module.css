@@ -56,6 +56,12 @@ body {
     padding: 1rem;
     font-family: 'KunnariRegularItalic';
     font-weight: bold;
+    opacity: 0.4;
+}
+
+.active{
+    opacity: 1 !important;
+
 }
 
 .toggle {
