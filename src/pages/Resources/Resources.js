@@ -1,0 +1,25 @@
+import React from 'react';
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import styles from "./Resources.module.css";
+import Blogs from "../../layout/Blogs/Blogs";
+
+function Resources() {
+
+    return (
+        <>
+            <Navbar />
+            <h1>Resources</h1>
+            <div className={styles.heroContainer}>
+                <Blogs />
+                <Footer />
+            </div>
+        </>
+    );
+}
+
+export default Resources;
+
+
+
+

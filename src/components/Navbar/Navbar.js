@@ -35,8 +35,8 @@ function Navbar() {
                 {!isMobile && (
                     <div className={`${styles.item} ${styles.actions}`}>
                         <a href="/projects">projects</a>
-                        <a href="">events</a>
-                        <a href="">resources</a>
+                        <a href="/events">events</a>
+                        <a href="/resources">resources</a>
                         <a href="/team">team</a>
                         <a href="https://discord.gg/pY4UCENc"><img src={Discord}></img></a>
                     </div>
@@ -54,8 +54,8 @@ function Navbar() {
                         </button>
                         <a href="/">home</a>
                         <a href="/projects">projects</a>
-                        <a href="">events</a>
-                        <a href="">resources</a>
+                        <a href="/events">events</a>
+                        <a href="/resources">resources</a>
                         <a href="/team">team</a>
                         <a href="https://discord.gg/pY4UCENc"><img src={Discord}></img></a>
                     </div>

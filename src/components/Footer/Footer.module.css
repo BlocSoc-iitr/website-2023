@@ -29,7 +29,6 @@
 }
 
 .footerItem1 {
-    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +37,7 @@
     grid-row-end: 6;
     word-spacing: 0;
     >h1 {
+        color: black;
         height: 30%;
         letter-spacing: 1px;
         font-family: 'KunnariBold';
