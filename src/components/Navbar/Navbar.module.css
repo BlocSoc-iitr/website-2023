@@ -1,134 +1,147 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 @font-face {
-    font-family: 'KunnariRegularItalic';
-    src: url(../../fonts/KuunariRegularItalic.otf);
+  font-family: "KunnariRegularItalic";
+  src: url(../../fonts/KuunariRegularItalic.otf);
 }
 
 .navbarContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: -1.6rem;
+  z-index: 10000;
 }
 
 .navbar {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    width: 96%;
-    padding: 0.02rem;
-    margin-top: 1.5rem;
-    border-radius: 16px;
-    background-color: #303444;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  width: 96%;
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  border-radius: 16px;
+  background-color: #303444;
+  transition: all 0.2s ease-out;
+  position: relative;
+}
+.navbar.scrolled {
+  width: 100%;
+  border-radius: 0;
 }
 
 .item {
-    color: #fdfdfd;
-    text-decoration: none;
-    font-size: 1.3rem;
+  color: #fdfdfd;
+  text-decoration: none;
+  font-size: 1.3rem;
 }
 
 .logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
 }
 
 .actions {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.actions>a {
-    text-decoration: none;
-    color: #fdfdfd;
-    padding: 1rem;
-    font-family: 'KunnariRegularItalic';
-    font-weight: bold;
-    opacity: 0.4;
+.actions > a {
+  text-decoration: none;
+  color: #fdfdfd;
+  padding: 1rem;
+  font-family: "KunnariRegularItalic";
+  font-weight: bold;
+  opacity: 0.4;
 }
 
-.active{
-    opacity: 1 !important;
-
+.active {
+  opacity: 1 !important;
 }
 
 .toggle {
-    display: none;
+  display: none;
 }
 
-@media (min-width: 0px) and (max-width: 450px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 86%;
-        height: auto;
+@media (min-width: 0px) and (max-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+    height: auto;
+  }
+  .navbar.navdown {
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  /* .item {
+    font-size: 0.5rem;
+
+    > a > img {
+      height: 0.5rem;
     }
+  } */
 
-    .item {
-        font-size: 0.5rem;
+  .actions {
+    display: none;
+    flex-direction: column;
+  }
+  .item.actions.open {
+    display: flex;
+    flex-direction: column;
+    background-color: #303444;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+  }
 
-        >a>img {
-            height: 0.5rem;
-        }
+  .actions > a {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    padding: 0.5rem;
+  }
+
+  /* .logo > img {
+    width: 12vw;
+    margin-left: 0.5rem;
+  } */
+
+  .toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 10%;
+    background-color: transparent;
+    border: 0;
+
+    > img {
+      width: 1.5rem;
+      cursor: pointer;
     }
+  }
 
-    .actions {
-        flex-direction: column;
-    }
-
-    .actions>a {
-        padding: 0.5rem;
-    }
-
-    .logo {
-        padding: 0.5rem;
-    }
-
-    .logo>img {
-        width: 12vw;
-        margin-left: 0.5rem;
-    }
-
-    .toggle {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 10%;
-        background-color: transparent;
-        border: 0;
-
-        >img {
-            width: 1rem;
-            margin-right: 1rem;
-        }
-
-        >p {
-            font-family: 'KunnariLight';
-            font-size: 1.1rem;
-            background: linear-gradient(to right, #2d4edf, #2d4edf);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-        }
-    }
-
-    .actionDiv {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+  .actionDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
