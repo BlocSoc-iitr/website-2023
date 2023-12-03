@@ -1,26 +1,13 @@
-.Body{
-    background:  #1E1E25;
-}
 .container{
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 4% 4.5%;
+    width: 94%;
+    height: auto;
+    padding: 2rem 0 2rem 0;
 }
 .sub{
-    
     display: grid;
-    grid-template-areas: "card card";
-    padding: 5% 0;
-    grid-row-gap: 2rem;
-    grid-column-gap: 2rem;
-}
-
-
-
-.heading{
-    font-family: 'Magilio';
-    font-size: 4.5rem;
-    color: #fff;
-    padding-left: 2%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }

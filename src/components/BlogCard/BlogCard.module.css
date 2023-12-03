@@ -1,33 +1,145 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2%;
-    color: #fff;
-    width:30%;
-  }
-.content {
-    flex-basis: calc(33.33% - 2%); 
-    margin-bottom: 2%; 
+.cardContainer1 {
+    background-image: url("../../assets/Resources/cardContainer1Background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000825;
+    height: 65vh;
+
+    .content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+
+        .heading {
+            /* border: 2px solid red; */
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 3rem;
+            line-height: 117%;
+            letter-spacing: 0.237px;
+            font-weight: 900;
+            padding: 0 1rem 0 1rem;
+            background: linear-gradient(to right, #2946a5, #2946a5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .desc {
+            height: 5%;
+            width: 100%;
+            background-image: linear-gradient(to right, #011047, #011047);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.8rem;
+        }
+
+        .link {
+            height: 40%;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            padding: 1rem;
+
+            >a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
-.heading1{
-    font-family: Lato;
-    font-size: 2.963rem;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 117%; /* 55.467px */
-    letter-spacing: 0.015rem;
-    background: linear-gradient(105deg, #2845AD 1.11%, #5493F7 98.53%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.desc {
-    font-size: 1.2rem;
-    padding-right: 5%;
+.cardContainer2 {
+    background-image: url("../../assets/Resources/cardContainer2Background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #191919;
+    height: 65vh;
+
+    .content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+
+        .heading {
+            /* border: 2px solid red; */
+            height: 40%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 0.933px;
+            padding: 0 1rem 0 1rem;
+            white-space: pre-line;
+            color: #ff016c;
+        }
+
+        .heading::first-line {
+            color: #faff01;
+        }
+
+        .desc {
+            height: 5%;
+            width: 70%;
+            background-image: linear-gradient(to right, #472835, #472835);
+            border: 2px solid #ff016c;
+            color: #ff016c;
+            border-radius: 2rem;
+            margin: 0 15% 5% 15%;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.8rem;
+        }
+
+        .link {
+            height: 30%;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            padding: 1rem;
+            white-space: pre-line;
+
+            >a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .link::first-line {
+            color: #faff01;
+        }
+    }
 }
 
-.link{
-    text-decoration: none !important;
+.blogFooter {
+    height: 10vh;
+    margin: 1rem 0 3rem 0;
+    >h2 {
+        color: #8C8B90;
+        font-family: Lato;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+
+    >h1 {
+        color: #FFF;
+        font-family: Lato;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.6rem;
+    }
 }

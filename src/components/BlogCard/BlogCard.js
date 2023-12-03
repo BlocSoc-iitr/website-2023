@@ -1,21 +1,27 @@
 import React from "react";
 import styles from "./BlogCard.module.css";
 
-const BlogCard = ({image,heading,link}) => {
-    var containerClass;
+const BlogCard = ({index, heading ,link}) => {
+  var cardContainer;  
+  if (index % 2 === 0)
+  cardContainer = styles.cardContainer1;
+else
+cardContainer = styles.cardContainer2;
+
     return (
-    <div className={styles.container}>
-      <div className={styles.image} style={{ backgroundImage: `url(..${image})` }}></div>
-      <div className={styles.content}>
-        <div className={styles.heading1}>{heading}</div>
-        <div className={styles.link}>{link}</div>
-        <p className={styles.desc}>Join Our Discord (Link in Discord)</p>
-
+    <div >
+      <div className={cardContainer}>
+        <div className={styles.content}>
+        <div className={styles.heading}>{heading}</div>
+        <a className={styles.link}>Read Now : <br/><a href={link}>{link}</a></a>
+        <p className={styles.desc}>Join Our Discord (Link in Discription)</p>
+        </div>
       </div>
-      <div className={styles.blogs}>Blogs</div>
-      <div className={styles.heading2}>{heading}</div>
-      <div className={styles.hl}></div>
-
+      <div className={styles.blogFooter}>
+        <h2>Blog</h2>
+        <h1>{heading}</h1>
+      </div>
+      <hr/>
     </div>
   );
 };

@@ -1,24 +1,26 @@
-import blog1 from "../../assets/Resources/Blog1.png";
 var Blogs_list = [
     {
-        image: blog1,
-        heading:"All about Bitcoin Core",
-        link:"https://tinyurl.com/bitcoin-core",
-        
+        heading:"Web3.0 and Decentralized Exchanges",
+        link:"https://medium.com/@blocsoc.acm/web3-0-and-decentralized-exchanges-disrupting-traditional-trading-platforms-db517e7f6dcf"
     },
     {
-        image: blog1,
-        heading:"All about Bitcoin Core",
-        link:"https://tinyurl.com/bitcoin-core",
-        
-    },  {
-        image: blog1,
-        heading:"All about Bitcoin Core",
-        link:"https://tinyurl.com/bitcoin-core",
-        
+        heading:"Deep Dive Into ECDSA",
+        link:"https://medium.com/@blocsoc.acm/ecdsa-26402064fd34"
     },
-   
-    
+    {
+        heading:"All about Bitcoin Core",
+        link:"https://medium.com/@blocsoc.acm/all-about-bitcoin-core-9e2008c4b94b"
+    },
+    {
+        heading:"Gas Optimization in Smart Contracts",
+        link:"https://medium.com/@blocsoc.acm/gas-optimization-in-smart-contracts-d4bd508dd361"
+    },
+    {
+        heading:"Unfolding Terra-Luna Collapse",
+        link:" https://tinyurl.com/blocsoc-blog"
+    }
+
+
 ]
 
 export default {Blogs_list};

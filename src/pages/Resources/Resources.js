@@ -9,8 +9,9 @@ function Resources() {
     return (
         <>
             <Navbar />
-            <h1>Resources</h1>
+            <h1 className={styles.ResourcesTitle}>Resources</h1>
             <div className={styles.heroContainer}>
+                <hr className={styles.hr} />
                 <Blogs />
                 <Footer />
             </div>
