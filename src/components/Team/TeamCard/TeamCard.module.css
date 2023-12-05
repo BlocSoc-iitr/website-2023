@@ -75,3 +75,15 @@
     flex: 1;
   }
 }
+@media (width < 450px) {
+  .cardContainer {
+    flex-direction: column-reverse;
+  }
+  .image {
+    height: 30vh;
+    width: 100%;
+  }
+  .images {
+    padding-bottom: 0;
+  }
+}
