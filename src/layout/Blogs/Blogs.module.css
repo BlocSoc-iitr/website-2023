@@ -1,13 +1,15 @@
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 94%;
-    height: auto;
-    padding: 2rem 0 2rem 0;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 94%;
+  height: auto;
+  padding: 2rem 0 2rem 0;
 }
-.sub{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.sub {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
 }

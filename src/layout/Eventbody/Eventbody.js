@@ -32,8 +32,8 @@ const EventBody = (props) => {
                 y: 0,
                 transition: {
                   type: "tween",
-                  delay: 0.2,
-                  duration: 1,
+                  delay: 0.1,
+                  duration: 0.5,
                   ease: "easeOut",
                 },
               }}

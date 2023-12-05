@@ -21,7 +21,7 @@ function Home() {
           className={styles.hero}
         >
           <motion.div
-            variants={slideIn("left", "tween", 0.2, 0.8)}
+            variants={slideIn("left", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.title}`}
           >
             <img
@@ -47,7 +47,7 @@ function Home() {
             </p>
           </motion.div>
           <motion.div
-            variants={slideIn("right", "tween", 0.2, 0.8)}
+            variants={slideIn("right", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.videoDiv}`}
           >
             <img
@@ -57,7 +57,7 @@ function Home() {
             />
           </motion.div>
           <motion.div
-            variants={slideIn("right", "tween", 0.2, 0.8)}
+            variants={slideIn("right", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.description}`}
           >
             <h2>Creating magic since 2021</h2>
@@ -80,7 +80,7 @@ function Home() {
           className={styles.heroInformation}
         >
           <motion.div
-            variants={fadeIn("right", "spring", 0.3, 0.75)}
+            variants={fadeIn("right", "spring", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.social}`}
           >
             <p>socials</p>
@@ -90,7 +90,7 @@ function Home() {
             </div>
           </motion.div>
           <motion.div
-            variants={fadeIn("right", "spring", 2 * 0.3, 0.75)}
+            variants={fadeIn("right", "spring", 2 * 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.hackathon}`}
           >
             <p>hackathons</p>
@@ -100,7 +100,7 @@ function Home() {
             </div>
           </motion.div>
           <motion.div
-            variants={fadeIn("right", "spring", 3 * 0.3, 0.75)}
+            variants={fadeIn("right", "spring", 3 * 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.team}`}
           >
             <p>team</p>
@@ -127,11 +127,11 @@ function Home() {
           id="photo-div"
         >
           <motion.div
-            variants={slideIn("left", "tween", 0.2, 0.8)}
+            variants={slideIn("left", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.calander}`}
           ></motion.div>
           <motion.div
-            variants={slideIn("left", "tween", 0.2, 0.8)}
+            variants={slideIn("left", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.connect}`}
           >
             <p>
@@ -145,7 +145,7 @@ function Home() {
             </div>
           </motion.div>
           <motion.div
-            variants={slideIn("right", "tween", 0.2, 0.8)}
+            variants={slideIn("right", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.photo}`}
           ></motion.div>
         </motion.div>

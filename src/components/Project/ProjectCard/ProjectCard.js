@@ -15,7 +15,7 @@ const ProjectCard = ({ heading, label, desc, link, image, index }) => {
 
   return (
     <div className={styles.CardContainer}>
-      <div>
+      <div className={styles["img-container"]}>
         <img className={styles.img} src={`..${image}`} />
       </div>
       <div className={styles.content}>

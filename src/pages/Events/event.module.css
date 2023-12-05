@@ -1,25 +1,25 @@
-.eventH1{    
-color: #FFF;
-font-family: "KunnariLight";
-font-size: 7rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 2.4px;
-margin-left: 4rem;
-margin-top: 4rem;
+.eventH1 {
+  color: #fff;
+  font-family: "KunnariLight";
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  margin-left: 4rem;
+  margin-top: 4rem;
 }
 .heroContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-@media (min-width: 0px) and (max-width: 700px) {
-    .eventH1 {
-        font-size: 3rem;
-        margin-bottom: 4rem;
-    }
+@media (min-width: 0px) and (max-width: 800px) {
+  .eventH1 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
 }

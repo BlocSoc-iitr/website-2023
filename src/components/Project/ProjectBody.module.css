@@ -1,69 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .Body {
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 96vw;
-    height: 98vh;
-    margin: 2rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    gap: 1.5rem;
+  flex: 1;
+  display: flex;
+  height: max(80vh, 780px);
+  align-items: center;
+  gap: 3rem;
 }
 
 .detailsContainer {
-    height: 100%;
-    width: 50%;
-    padding: 2rem;
-    padding-top: 0;
-    padding-bottom: 0;
+  flex: 1;
+  height: 100%;
 }
 
 .listContainer {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    font-family: 'KunnariLight';
-    padding: 2rem;
-    padding-top: 0;
-    .projectItem {
-        >h3 {
-            padding: 1rem;
-            font-size: 1.5rem;
-            font-style: italic;
-            opacity: 0.5;
-            transition: all 0.2s ease-in-out;
-            cursor: pointer;
-            border-top: 1px solid white;
-            border-bottom: 1px solid white;
-        }
+  flex: 1;
+  height: max(80vh, 780px);
+  display: flex;
+  flex-direction: column;
+  font-family: "KunnariLight";
+
+  .projectItem {
+    > h3 {
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-style: italic;
+      opacity: 0.5;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
     }
-    
-    >h1 {
-        font-size: 5rem;
-        font-family: 'KunnariBold';
-        opacity: 1;
-    }
+  }
+
+  > h1 {
+    font-size: 5rem;
+    font-family: "KunnariBold";
+    opacity: 1;
+    margin-bottom: 1rem;
+  }
 }
 
-.listDiv{
-    overflow-y: scroll;
+.listDiv {
+  overflow-y: scroll;
 }
 
 .activeProjectName {
-    opacity: 1 !important;
-    font-size: 'KunnariBold' !important;
+  opacity: 1 !important;
+  font-size: "KunnariBold" !important;
+}
+@media (width < 900px) {
+  .detailsContainer {
+    flex: 2;
+  }
+  .listContainer {
+    flex: 1;
+    > h1 {
+      font-size: 3rem;
+    }
+  }
+  .listContainer .projectItem > h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (width < 600px) {
+  .Body {
+    margin: 2rem 1rem;
+  }
+  .container {
+    gap: 1rem;
+  }
+  .listContainer > h1 {
+    font-size: 1.5rem;
+  }
+
+  .listContainer .projectItem > h3 {
+    font-size: 0.9rem;
+  }
 }

@@ -4,7 +4,7 @@ import TeamCard from "./TeamCard/TeamCard";
 import Data from "./TeamList";
 
 const TeamBody = () => {
-  var teamMembers = Data.team;
+  const { team } = Data;
   const [displayMember, setDisplayMember] = useState(0);
   // const [filter, setFilter] = useState("All");
 
@@ -13,6 +13,10 @@ const TeamBody = () => {
   };
 
   const handleNextMemeberClick = () => {
+    if (displayMember === team.length - 1) {
+      setDisplayMember(0);
+      return;
+    }
     setDisplayMember(displayMember + 1);
   };
 
@@ -27,40 +31,35 @@ const TeamBody = () => {
         <h1>Our Team</h1>
       </div>
       <div className={styles.displayMember}>
-        {teamMembers.map((m, index) => {
-          return (
-            index === displayMember && (
-              <div className={styles.detailsGrid}>
-                <div className={styles.teamCard}>
-                  <TeamCard
-                    className={styles.teamCard}
-                    index={index}
-                    Name={m.name}
-                    designation={m.designation}
-                    twitter={m.twitter}
-                    linkedin={m.linkedin}
-                    image={m.image}
-                    key={m.sl}
-                  />
-                </div>
-                <div className={styles.nextMember}>
-                  <div
-                    className={styles.name}
-                    onClick={() => handleNextMemeberClick()}
-                  >
-                    {teamMembers[index + 1]?.name}
-                  </div>
-                  <div
-                    className={styles.designation}
-                    onClick={() => handleNextMemeberClick()}
-                  >
-                    {teamMembers[index + 1]?.designation}
-                  </div>
-                </div>
-              </div>
-            )
-          );
-        })}
+        <div className={styles.detailsGrid}>
+          <div className={styles.teamCard}>
+            <TeamCard
+              className={styles.teamCard}
+              Name={team[displayMember].name}
+              designation={team[displayMember].designation}
+              twitter={team[displayMember].twitter}
+              linkedin={team[displayMember].linkedin}
+              image={team[displayMember].image}
+              key={team[displayMember].sl}
+            />
+          </div>
+          <div className={styles.nextMember}>
+            <div
+              className={styles.name}
+              onClick={() => handleNextMemeberClick()}
+            >
+              {displayMember === team.length - 1
+                ? team[0].name
+                : team[displayMember + 1]?.name}
+            </div>
+            <div
+              className={styles.designation}
+              onClick={() => handleNextMemeberClick()}
+            >
+              {team[displayMember + 1]?.designation}
+            </div>
+          </div>
+        </div>
       </div>
       {/* <div className={styles.filterDiv}>
                 <div className={styles.filter}>
@@ -80,7 +79,7 @@ const TeamBody = () => {
                 </div>
             </div> */}
       <div className={styles.teamRow}>
-        {teamMembers.map((m, index) => {
+        {team.map((m, index) => {
           return (
             <img
               src={m.image}
