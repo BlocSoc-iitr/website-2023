@@ -38,3 +38,20 @@
     line-height: 148%;
     height: 60%;
 }
+@media (width < 600px) {
+    .AchivementsCard{
+        padding: 0.5rem;
+    }
+    .AchivementsCardDate {
+        font-size: 0.8rem;
+        height: 20%;
+    }
+    .AchivementsCardHeading{
+        font-size: 1.5rem;
+        height: 30%;
+    }
+    .AchivementsCardDesc{
+        font-size: 0.8rem;
+        height: 50%;
+    }
+}
