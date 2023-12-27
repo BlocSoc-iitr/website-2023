@@ -9,6 +9,9 @@ import MaskStar from "../../assets/Home/MaskStar.svg";
 import { motion } from "framer-motion";
 import { slideIn, fadeIn } from "../../components/utils/motion";
 
+import AchivementsBody from "../../components/Achivements/AchivementsBody";
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <>
@@ -50,11 +53,13 @@ function Home() {
             variants={slideIn("right", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.videoDiv}`}
           >
+            <a href={"https://youtu.be/YRj5iM3pyfc?si=S8J9doH2T82YX8oJ"}>
             <img
               src={VideoBackground}
               className={styles.videoBackground}
               draggable="false"
             />
+            </a>
           </motion.div>
           <motion.div
             variants={slideIn("right", "tween", 0.1, 0.5)}
@@ -129,7 +134,9 @@ function Home() {
           <motion.div
             variants={slideIn("left", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.calander}`}
-          ></motion.div>
+          >
+            <AchivementsBody />
+          </motion.div>
           <motion.div
             variants={slideIn("left", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.connect}`}

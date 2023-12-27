@@ -1,63 +1,74 @@
 import wagbi from '../../assets/Project/wagbi.png';
-import starkpay from '../../assets/Project/starkpay.png';
-import nft from '../../assets/Project/nft.jpg';
-import uniorders from '../../assets/Project/uniorders.jpeg';
-import refinext from '../../assets/Project/refinext.png';
-import crosschain from '../../assets/Project/blockchains.png';
-import wagewisex from '../../assets/Project/wagewisex.png';
-import satchel from '../../assets/Project/satchel.png';
-import crosschat from '../../assets/Project/crosschat.png';
-import transify from '../../assets/Project/transify.png';
-import blockgpost from '../../assets/Project/blockgpost.png';
 import eastore from '../../assets/Project/eastore.png';
 import metamask from '../../assets/Project/metamask.png';
+import OpenStylus from '../../assets/Project/OpenStylus.webp';
+import HyperLand from '../../assets/Project/HyperLand.webp';
+import ZkMask from '../../assets/Project/ZkMask.jpg';
+import FlockChain from '../../assets/Project/FlockChain.png';
+import Arcave from '../../assets/Project/Arcave.webp';
 
 var Project_List = [
     {   
         sl:1,
-        heading:"WageWiseX",
-        label:["#NFTs","#IPFS"],
-        desc:"Next Generation Decentralised Payroll distribution system with advanced features such as Biometric Wallet, cross-Chain Swaps, IPFS storage, NFT work completion certificates all with a simplified UI.​",
-        link:"https://devfolio.co/projects/wagewisex-6136",
-        image:wagewisex,
+        heading:"OpenStylus",
+        label:["#Stylus","#EIPS", "#Solidity", "#Rust"],
+        desc:"Modular and gas-optimized smart contract libraries and frameworks for Stylus Smart contract development.",
+        link:"https://devfolio.co/projects/open-stylus-0f80",
+        image:OpenStylus,
     },
     {   
         sl:2,
-        heading:"Satchel",
-        label:["#Polygon","#Vercel"],
-        desc:"​Satchel is capable of swapping tokens from one blockchain to another using the router-protocol. We also tried to implement cross chain transfer of tokens between blockchains.",
-        link:"https://devfolio.co/projects/satchel-12fd",
-        image:satchel,
+        heading:"Arcave",
+        label:["#WebSocket", "Three.js", "Mantle"],
+        desc:"Step into an expansive open-world gaming metaverse on L2, boasting low latency and scalable in-game communication with live audio and video.",
+        link:"https://devfolio.co/projects/arcave-e8c0",
+        image:Arcave,
     },
     {   
         sl:3,
-        heading:"Cross Chat",
-        label:["#Polygon", "#Replit", "#Avalanche"],
-        desc:"​Cross Chat brings chain independence and interoperability for users on a very basic level.The application cross chat solves the problem of Interporterablity and Dependence of different blockchains. The project bridges the different blockchains using the CrossTalk library of Router Protocol.",
-        link:"https://devfolio.co/projects/cross-chat-b57b",
-        image:crosschat,
+        heading:"FLockChain",
+        label:["#Stacker", "#Tensorrflow"],
+        desc:"A Federated Learning network built on Proof of Stake and micro-rollups.",
+        link:"https://devfolio.co/projects/flockchain-88eb",
+        image:FlockChain,
     },
     {   
         sl:4,
-        heading:"TransiFy",
-        label:["#Blockchain", "#Hardhat"],
-        desc:"A cross-chain dex aggregator.​",
-        link:"https://devfolio.co/projects/transify-daa0",
-        image:transify,
+        heading:"DappHack",
+        label:["#Filecoin", "#IPFS"],
+        desc:"An on-chain web3 hackathon portal for blockchain devs to come together and build something amazing with on-chain interactions.",
+        link:"https://ethglobal.com/showcase/dapphack-4tjef",
+        // image:,
+    },
+    {   
+        sl:4,
+        heading:"HyperLand",
+        label:["#SUI-CLI", "#ZUSTAND"],
+        desc:"A 3D Sanbox Game built on top of SUI utilizing it's fluid object based contract apporach.",
+        link:"https://devfolio.co/projects/hyperland-da6b",
+        image:HyperLand,
     },
     {   
         sl:5,
-        heading:"BlockGpost",
-        label:["#IPFS / #Filecoin", "#Polygon", "#Router"],
-        desc:"A decentralised application allowing bloggers to post their blogs while leveraging the full security, trust and transparency of blockchain.​",
-        link:"https://devfolio.co/projects/blockgpost-75e2",
-        image:blockgpost,
+        heading:"HorseRiders",
+        label:["#FFT", "#Huff"],
+        desc:"Fast Fourier Transformation Implementation and a Complex Maths Library written in Huff",
+        link:"https://github.com/BlocSoc-iitr/HorseRiders",
+        // image:,
+    },
+    {   
+        sl:6,
+        heading:"ZkMask",
+        label:["#WalletConnect", "#zk-SNARKs"],
+        desc:"ZkMask introduces a novel 2FA protocol, leveraging the power of zk-SNARKs and face recognition technology to secure blockchain transactions. ZkMask scans the user's face to generate a cryptographic key, introducing a second layer of security.",
+        link:"https://ethglobal.com/showcase/zkmask-0x1z4",
+        image:ZkMask,
     },
     {   
         sl:6,
         heading:"EAStore",
         label:["#Axios", "#Lotus", "#Moralis"],
-        desc:"Easing your Filecoin storages​",
+        desc:"Easing your Filecoin storages",
         link:"https://devfolio.co/projects/eastore-e336",
         image:eastore,
     },
@@ -65,7 +76,7 @@ var Project_List = [
         sl:7,
         heading:"Inter IIT Tech Meet 11.0: Metamask Snaps",
         label:["#Metamask"],
-        desc:"Extending the functionality of metamask​",
+        desc:"Extending the functionality of metamask",
         link:"https://github.com/Bisht13/Inter-IIT-2k23",
         image:metamask,
     },
@@ -73,49 +84,9 @@ var Project_List = [
         sl:8,
         heading:"wagbi.",
         label:["#DeFi","#Polygon","#Kronos"],
-        desc:"​WAGBI is a money market protocol that solves the current On-Chain Lending problems using the several new technologies and primitives.​",
+        desc:"WAGBI is a money market protocol that solves the current On-Chain Lending problems using the several new technologies and primitives.",
         link:"https://github.com/pradyuman-verma/WAGBI",
         image:wagbi,
-    },
-    {   
-        sl:9,
-        heading:"StarkPay",
-        label:["#Starknet"],
-        desc:"Stream seamless recurring crypto payments! Automate salaries by streaming them - so employees can withdraw whenever they want.",
-        link:"https://github.com/chirag-bgh/starkpayv1",
-        image:starkpay,
-    },
-    {   
-        sl:10,
-        heading:"Quantum NFT bridge",
-        label:["#Bridge", "#NFTs", "#Ethereum"],
-        desc:"Quantum is a Decentralised NFT cross-chain bridging platform that supports the transfer of NFT minted using Quantum NFT manager.",
-        link:"https://github.com/BlocSoc-iitr/Quantum-NFT-Bridge",
-        image: nft,
-    },
-    {   
-        sl:11,
-        heading:"Cross Chain payments",
-        label:["#Cross-chain", "#axelar", "#Ethereum", "#DeFi", "#Dapp"],
-        desc:"Cross chain payments is an interface through which a user with assets on one chain can easily perform cross-chain payments, without the necessity of owning assets on other-chains. We also deployed it on skynet so that a merchant doesn't have to worry about the payment infra going down if centralized services like AWS go down.",
-        link:"https://devpost.com/software/cross-chain-payments",
-        image: crosschain
-    },
-    {   
-        sl:12,
-        heading:"UniOrders",
-        label:["#range-order", "#uniswap", "#DeFi"],
-        desc:"The app automates the complete process from placing the limit order and removing the liquidity after processing it in a limit order on UniswapV3.",
-        link:"https://devfolio.co/projects/easyorders-0700",
-        image: uniorders,
-    },
-    {   
-        sl:13,
-        heading:"Refi-next",
-        label:[" #Connext", "#Cross-chain", "#Refinance", "#DeFi"],
-        desc:"The dapp aims to help people to transfer there position from one protocol on a chain to another protocol in a different chain in a single click and gas efficiently sparing user from needing to clear his position from one chain manually and then bridge the tokens on a different chain.",
-        link:" https://devfolio.co/projects/refinext-6247",
-        image: refinext,
     }
 ]
 

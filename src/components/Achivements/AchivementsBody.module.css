@@ -1,0 +1,39 @@
+.AchivementsBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+.ControlDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    height: 20%;
+    width: 100%;
+}
+.ContentDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 80%;
+    width: 100%;
+}
+.AchivementsBotton{
+    background-image: url("../../assets/Home/AchivementButton.svg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: transparent;
+    color: transparent;
+    height: 2.3rem;
+    width: 2.3rem;
+    border: none;
+    border-radius: 2rem;
+}
+.PreviousBtn{
+    background-image: url("../../assets/Home/PreviousAchivementBtn.svg") !important;
+}
