@@ -81,7 +81,6 @@
     display: flex;
     justify-content: end;
     align-items: end;
-    height: 50%;
     color: #1e1e1e;
     font-size: 10vh;
     font-family: "Kunnari";
@@ -162,5 +161,13 @@
   .cube {
     width: 100px;
     height: 100px;
+  }
+}
+
+@media (width < 350px) {
+  .footerItem2 > div {
+    > h1 {
+      font-size: 1.5rem;
+    }
   }
 }
