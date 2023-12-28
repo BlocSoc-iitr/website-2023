@@ -11,11 +11,10 @@ cardContainer = styles.cardContainer2;
     return (
     <div >
       <div className={cardContainer}>
-        <div className={styles.content}>
+        <a href={link}><div className={styles.content}>
         <div className={styles.heading}>{heading}</div>
-        <a className={styles.link}>Read Now : <br/><a href={link}>{link}</a></a>
-        <p className={styles.desc}>Join Our Discord (Link in Discription)</p>
-        </div>
+        {/* <p className={styles.desc}>Join Our Discord (Link in Discription)</p> */}
+        </div></a>
       </div>
       <div className={styles.blogFooter}>
         <h2>Blog</h2>

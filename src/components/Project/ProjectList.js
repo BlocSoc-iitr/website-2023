@@ -6,6 +6,8 @@ import HyperLand from '../../assets/Project/HyperLand.webp';
 import ZkMask from '../../assets/Project/ZkMask.jpg';
 import FlockChain from '../../assets/Project/FlockChain.png';
 import Arcave from '../../assets/Project/Arcave.webp';
+import DappHack from "../../assets/Project/DappHack.png"
+import Huff from "../../assets/Project/Huff.png";
 
 var Project_List = [
     {   
@@ -38,7 +40,7 @@ var Project_List = [
         label:["#Filecoin", "#IPFS"],
         desc:"An on-chain web3 hackathon portal for blockchain devs to come together and build something amazing with on-chain interactions.",
         link:"https://ethglobal.com/showcase/dapphack-4tjef",
-        // image:,
+        image: DappHack,
     },
     {   
         sl:4,
@@ -54,7 +56,7 @@ var Project_List = [
         label:["#FFT", "#Huff"],
         desc:"Fast Fourier Transformation Implementation and a Complex Maths Library written in Huff",
         link:"https://github.com/BlocSoc-iitr/HorseRiders",
-        // image:,
+        image:Huff,
     },
     {   
         sl:6,

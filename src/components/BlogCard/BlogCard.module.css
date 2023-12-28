@@ -11,14 +11,14 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: center;
         align-items: start;
 
         .heading {
             /* border: 2px solid red; */
             width: 100%;
             font-family: 'Roboto', sans-serif;
-            font-size: 3rem;
+            font-size: 2rem;
             line-height: 117%;
             letter-spacing: 0.237px;
             font-weight: 900;
@@ -66,7 +66,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: center;
         align-items: start;
 
         .heading {

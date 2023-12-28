@@ -9,7 +9,6 @@ import richa from '../../assets/Team/richa.jpg';
 import neerav from '../../assets/Team/neerav_chittora.jpg';
 import shivam from '../../assets/Team/shivam_verma.jpg';
 import yash_b from '../../assets/Team/yash_bhanushali.jpg';
-import pooja from '../../assets/Team/pooja_patel.jpeg';
 import kamal from '../../assets/Team/kamal_sharma.jpg';
 import parthsarthi from '../../assets/Team/parthsarthi_mishra.jpg';
 import movish from '../../assets/Team/movish_verma.jpg';
@@ -27,7 +26,6 @@ import vaishnavi from '../../assets/Team/vaishnavi_singh.jpeg';
 import varun from '../../assets/Team/varun_sharma.jpg';
 import shashank from '../../assets/Team/shashank_trivedi.jpg';
 import archit from '../../assets/Team/archit_gangwal.jpg';
-import sneha from '../../assets/Team/sneha_titoriya.jpg';
 import priyanshu from '../../assets/Team/priyanshu_mehra.jpeg';
 
 var team = [
@@ -111,15 +109,6 @@ var team = [
         twitter:"https://twitter.com/Y_ash19",
         linkedin:"https://www.linkedin.com/in/yash-bhanushali-a34a2a22a/",
         image: yash_b,
-    },
-    {
-        sl: 10,
-        name: "Pooja Patel",
-        designation: "Developer",
-        block: "1",
-        twitter:"https://twitter.com/0xpooja6",
-        linkedin:"https://www.linkedin.com/in/pooja-patel-512b29227/",
-        image: pooja,
     },
     {
         sl: 11,
@@ -256,15 +245,15 @@ var team = [
         linkedin:"https://www.linkedin.com/in/archit-gangwal-16b035228",
         image: archit,
     },
-    {
-        sl:27,
-        name: "Sneha Titoriya ",
-        designation: "Designer",
-        block: "2",
-        twitter:"https://twitter.com/sneha_titoriya",
-        linkedin:"https://www.linkedin.com/in/sneha-titoriya",
-        image: sneha,
-    },
+    // {
+    //     sl:25,
+    //     name: "Pushpendra",
+    //     designation: "Developer",
+    //     block: "2",
+    //     twitter:"",
+    //     linkedin:"https://www.linkedin.com/in/archit-gangwal-16b035228",
+    //     // image: ,
+    // },
     {
         sl:28,
         name: "Priyanshu Mehra",
