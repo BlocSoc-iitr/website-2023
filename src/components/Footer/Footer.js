@@ -7,20 +7,18 @@ function Footer() {
     <>
       <div className={`${styles.footer}`}>
         <div className={`${styles.footerItem1}`}>
-          <h1>DEMISTIFYING ONE</h1>
+          <h1>DEMYSTIFYING ONE</h1>
           <div className={styles["cube-heading"]}>
-            <img src={Cube} className={`${styles.cube}`} />
+            <img src={Cube} className={`${styles.cube}`} alt="" />
             <h1>BLOCK AT A TIME</h1>
           </div>
         </div>
         <div className={`${styles.footerItem2}`}>
-          <div>
-            <h3>Start a Conversation</h3>
-            <h1>blocsoc.acm@iitr.ac.in</h1>
-            <h4>
-              <img src={LocationIcon}></img>ACM Room, Ground floor, SAC
-              Building,IIT Roorkee, Uttarakhand-247667
-            </h4>
+          <div className={styles.footerText}>Start a Conversation</div>
+          <div className={styles.email}>blocsoc.acm@iitr.ac.in</div>
+          <div className={styles.address}>
+            <img src={LocationIcon} alt=""></img>ACM Room, Ground floor, SAC
+            Building, IIT Roorkee, Uttarakhand-247667
           </div>
         </div>
       </div>

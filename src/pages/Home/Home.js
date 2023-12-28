@@ -31,16 +31,19 @@ function Home() {
               src={TitleBackground}
               className={styles.titleBackground}
               draggable="false"
+              alt="title-background"
             />
             <img
               src={TitleGradient}
               className={styles.titleGradient}
               draggable="false"
+              alt="title-gradient"
             />
             <img
               src={TitleLogo}
               className={styles.titleLogo}
               draggable="false"
+              alt="title-logo"
             />
             <h1>BLOCSOC IITR</h1>
             <p>
@@ -50,19 +53,20 @@ function Home() {
             </p>
           </motion.div>
           <motion.div
-            variants={slideIn("right", "tween", 0.1, 0.5)}
+            // variants={slideIn("right", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.videoDiv}`}
           >
             <a href={"https://youtu.be/YRj5iM3pyfc?si=S8J9doH2T82YX8oJ"}>
-            <img
-              src={VideoBackground}
-              className={styles.videoBackground}
-              draggable="false"
-            />
+              <img
+                src={VideoBackground}
+                className={styles.videoBackground}
+                draggable="false"
+                alt="video-background"
+              />
             </a>
           </motion.div>
           <motion.div
-            variants={slideIn("right", "tween", 0.1, 0.5)}
+            // variants={slideIn("right", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.description}`}
           >
             <h2>Creating magic since 2021</h2>
@@ -85,7 +89,7 @@ function Home() {
           className={styles.heroInformation}
         >
           <motion.div
-            variants={fadeIn("right", "spring", 0.1, 0.5)}
+            // variants={fadeIn("right", "spring", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.social}`}
           >
             <p>socials</p>
@@ -95,7 +99,7 @@ function Home() {
             </div>
           </motion.div>
           <motion.div
-            variants={fadeIn("right", "spring", 2 * 0.1, 0.5)}
+            // variants={fadeIn("right", "spring", 2 * 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.hackathon}`}
           >
             <p>hackathons</p>
@@ -105,7 +109,7 @@ function Home() {
             </div>
           </motion.div>
           <motion.div
-            variants={fadeIn("right", "spring", 3 * 0.1, 0.5)}
+            // variants={fadeIn("right", "spring", 3 * 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.team}`}
           >
             <p>team</p>
@@ -116,13 +120,15 @@ function Home() {
           </motion.div>
         </motion.div>
         <div className={styles.tagLine}>
-          <marquee scrollamount="30">
-            Where Creativity Meets the Chain<img src={MaskStar}></img>
-            Where Creativity Meets the Chain<img src={MaskStar}></img>
-            Where Creativity Meets the Chain<img src={MaskStar}></img>
-            Where Creativity Meets the Chain<img src={MaskStar}></img>
-            Where Creativity Meets the Chain<img src={MaskStar}></img>
-          </marquee>
+          <div className={styles.scrollText}>
+            Where Creativity Meets the Chain <img src={MaskStar} alt="" />
+            Where Creativity Meets the Chain <img src={MaskStar} alt="" />
+            Where Creativity Meets the Chain <img src={MaskStar} alt="" />
+            Where Creativity Meets the Chain <img src={MaskStar} alt="" />
+            Where Creativity Meets the Chain <img src={MaskStar} alt="" />
+            Where Creativity Meets the Chain <img src={MaskStar} alt="" />
+            Where Creativity Meets the Chain <img src={MaskStar} alt="" />
+          </div>
         </div>
         <motion.div
           initial="hidden"
@@ -152,11 +158,9 @@ function Home() {
             </div>
           </motion.div>
           <motion.div
-            variants={slideIn("right", "tween", 0.1, 0.5)}
             className={`${styles.heroItem} ${styles.photo}`}
           ></motion.div>
         </motion.div>
-        <Footer />
       </div>
     </>
   );

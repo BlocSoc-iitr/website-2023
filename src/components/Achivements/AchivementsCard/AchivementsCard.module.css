@@ -1,57 +1,61 @@
-.AchivementsCard{
-    height: 100%;
-    padding: 1rem;
-    padding-left: 0;
+@font-face {
+  font-family: Kuunari;
+  src: url(./../../../fonts/Kuunari\ Regular.otf);
 }
-.AchivementsCardContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    height: 100%;
+
+.AchivementsCard {
+  height: 100%;
+  padding: 1rem;
+  padding-left: 0;
+}
+.AchivementsCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
 }
 .AchivementsCardDate {
-    color: #FFF;
-    font-family: Lato;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    height: 10%;
+  color: #fff;
+  font-family: Lato;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height: 10%;
 }
-.AchivementsCardHeading{
-    color: #FFF;
-    font-family: Kuunari;
-    font-size: 2.5rem;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.6px;
-    height: 30%;
+.AchivementsCardHeading {
+  color: #fff;
+  font-family: Kuunari;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  height: 30%;
 }
-.AchivementsCardDesc{
-    color: #FFF;
-    font-family: Lato;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 148%;
-    height: 60%;
+.AchivementsCardDesc {
+  color: #fff;
+  font-family: Lato;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 148%;
+  height: 60%;
 }
 @media (width < 600px) {
-    .AchivementsCard{
-        padding: 0.5rem;
-    }
-    .AchivementsCardDate {
-        font-size: 0.8rem;
-        height: 20%;
-    }
-    .AchivementsCardHeading{
-        font-size: 1.5rem;
-        height: 30%;
-    }
-    .AchivementsCardDesc{
-        font-size: 0.8rem;
-        height: 50%;
-    }
+  .AchivementsCard {
+    padding: 0.5rem;
+  }
+  .AchivementsCardDate {
+    font-size: 0.8rem;
+    height: 20%;
+  }
+  .AchivementsCardHeading {
+    font-size: 1.5rem;
+    height: 30%;
+  }
+  .AchivementsCardDesc {
+    font-size: 0.8rem;
+    height: 50%;
+  }
 }

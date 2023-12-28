@@ -9,15 +9,16 @@
 }
 @font-face {
   font-family: "Kunnari";
-  src: url(../../fonts/KuunariRegularItalic.otf);
+  src: url(../../fonts/Kuunari\ Regular.otf);
 }
 
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 95%;
-  padding: 0.5rem;
-  margin: 2rem 0;
+  margin: 2rem;
   color: #fdfdfd;
   background-image: url(../../assets/Footer/Footerbackground.png);
   background-size: cover;
@@ -32,7 +33,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
   word-spacing: 0;
   > h1,
@@ -58,34 +59,71 @@
 
 .footerItem2 {
   display: flex;
-  justify-content: end;
-  align-items: end;
+  width: inherit;
   flex-direction: column;
-  width: 100%;
-  > div > h3 {
-    color: #1e1e1e;
-    font-family: "LatoRegular";
-    font-size: 2vw;
-    font-style: italic;
-    font-weight: 300;
-    margin: 0;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 36px;
+}
+
+.footerText {
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 300;
+  color: black;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Kuunari;
+  font-size: 84px;
+  font-weight: 700;
+  color: #000;
+}
+
+@media screen and (max-width: 1180px) {
+  .footerItem1 {
+    > h1,
+    .cube-heading > h1 {
+      font-size: 100px;
+      font-weight: 500;
+    }
   }
-  > div > h4 {
-    color: #1e1e1e;
-    font-family: "LatoRegular";
-    font-size: 1vw;
-    font-style: italic;
-    margin: 0;
+  .footerItem2 {
+    padding-bottom: 48px;
   }
-  > div > h1 {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    color: #1e1e1e;
-    font-size: 10vh;
-    font-family: "Kunnari";
-    margin: 0;
+
+  .footerText {
+    font-size: 24px;
   }
+
+  .email {
+    font-size: 64px;
+    font-style: bold;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .email {
+    font-size: 60px;
+  }
+}
+
+.address {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  gap: 0.5rem;
 }
 
 .cube {
