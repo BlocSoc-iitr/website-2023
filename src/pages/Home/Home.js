@@ -93,7 +93,7 @@ function Home() {
             className={`${styles.heroItem} ${styles.social}`}
           >
             <p>socials</p>
-            <div>
+            <div className={styles.socialText}>
               <p>active community members on discord</p>
               <h3>1000+</h3>
             </div>
@@ -103,7 +103,7 @@ function Home() {
             className={`${styles.heroItem} ${styles.hackathon}`}
           >
             <p>hackathons</p>
-            <div>
+            <div className={styles.socialText}>
               <p>hackathons won over past few years</p>
               <h3>10+</h3>
             </div>
@@ -113,7 +113,7 @@ function Home() {
             className={`${styles.heroItem} ${styles.team}`}
           >
             <p>team</p>
-            <div>
+            <div className={styles.socialText}>
               <p>skilled & active core team members</p>
               <h3>45+</h3>
             </div>

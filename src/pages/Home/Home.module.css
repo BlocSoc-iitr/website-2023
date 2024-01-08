@@ -182,15 +182,15 @@ a {
 
 /* Video-Div */
 
-.videoDiv {
+.videoDiv a {
+  width: 100%;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
 .videoBackground {
-  overflow: hidden;
   height: 100%;
-  width: 100%;
+  width: inherit;
   border-radius: 40px;
 }
 
@@ -239,6 +239,17 @@ a {
     font-style: italic;
     margin-left: 0.4rem;
   }
+}
+
+.socialText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialText p {
+  width: 50%;
 }
 
 /* Hackathon */
